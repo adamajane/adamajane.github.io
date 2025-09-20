@@ -10,6 +10,18 @@
 
     <!-- CSS Styles -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Font Awesome icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <title>Adam Ajane</title>
 
     <!-- Favicons -->
@@ -31,10 +43,25 @@
       <h1>Adam Ajane</h1>
       <ul class="navigation">
         <!--<li><a href="#about" class="nav-link">About</a></li> -->
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li>
+          <div class="nav-section">
+            <i class="fa-solid fa-gear"></i>
+            <a href="#skills" class="nav-link">Skills</a>
+          </div>
+        </li>
+        <li>
+          <div class="nav-section">
+            <i class="fa-solid fa-code"></i>
+            <a href="#projects" class="nav-link">Projects</a>
+          </div>
+        </li>
         <!-- <li><a href="#blog" class="nav-link">Blog</a></li> -->
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <div class="nav-section">
+            <i class="fa-regular fa-address-card"></i>
+            <a href="#contact" class="nav-link">Contact</a>
+          </div>
+        </li>
       </ul>
       <button
         type="button"
@@ -68,7 +95,10 @@
       </div>
     </section>
     <!-- Skills section -->
-    <section class="skills"></section>
+    <section class="skills" id="skills">
+      <!-- <h1 class="skills-title">Skills</h1>
+      <p class="skills-list"></p> -->
+    </section>
     <!-- Projects section -->
     <section class="projects"></section>
     <!-- Contact section -->
@@ -82,10 +112,6 @@
     <!-- Website scripts-->
     <script src="assets/js/script.js"></script>
 
-    <!-- Font Awesome scripts-->
-    <script
-      src="https://kit.fontawesome.com/5af4dcd9be.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

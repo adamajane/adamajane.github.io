@@ -12,11 +12,11 @@ Tailwind CSS
   --bg-color: #fcfcfc;
   --bg2-color: #2c2b2b;
   --primary-color: #000000;
-  --secondary-color: #b90000;
-  --third-color: #ffffff;
+  --secondary-color: #ffffff;
+  --third-color: #b90000;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
-  --bottom-margin: 0.5rem;
+  --bottom-margin: 1.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
@@ -24,6 +24,10 @@ Tailwind CSS
 
 html {
   scroll-behavior: smooth;
+}
+
+#grad {
+  background-image: linear-gradient(to bottom, red, yellow);
 }
 
 nav {
@@ -40,17 +44,17 @@ nav {
 }
 
 nav h1 {
-  color: var(--third-color);
+  color: var(--secondary-color);
 }
 
 nav a {
   font-weight: var(--bold-font);
-  color: var(--third-color);
+  color: var(--secondary-color);
   transition: var(--transition);
 }
 
 nav i {
-  color: var(--third-color);
+  color: var(--secondary-color);
   transition: var(--transition);
 }
 
@@ -75,17 +79,51 @@ a {
   color: var(--primary-color);
 }
 
+h1 {
+  color: var(--secondary-color);
+  /* background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
 body {
   font-family: var(--font-family);
+  background-color: var(--primary-color);
+}
+
+h5 {
+  font-weight: 200;
+  text-align: center;
+  font-size: 35px;
+  color: var(--secondary-color);
+  padding: 0;
+  line-height: 0.8em !important;
+  text-transform: none;
+  font-weight: 600;
+}
+
+h5 span {
+  color: var(--third-color);
+  animation-delay: 2s;
+  font-weight: 600;
+}
+
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
+
+.nav-section:hover h1 {
+  color: var(--third-color);
+  transition: var(--transition);
 }
 
 .nav-section:hover i {
-  color: var(--secondary-color);
+  color: var(--third-color);
   transition: var(--transition);
 }
 
 .nav-section:hover a {
-  color: var(--secondary-color);
+  color: var(--third-color);
   transition: var(--transition);
 }
 
@@ -98,29 +136,51 @@ body {
   display: none;
 }
 
-.hero {
+.about-section {
   display: flex;
-  align-items: center;
+  text-align: center;
   justify-content: center;
   gap: 2.5rem;
   max-width: 68.75rem;
   margin: auto;
 }
 
-.hero img {
-  height: 30rem;
-  width: 30rem;
+.about-section img {
+  height: 20rem;
 }
 
-.bio h2 {
+.about-section h1 {
+  margin-bottom: var(--bottom-margin);
+  font-size: 50px;
+}
+
+.about-section h5 {
+  z-index: 0;
   margin-bottom: var(--bottom-margin);
 }
 
-.bio p {
+.about-section p {
+  color: var(--secondary-color);
   line-height: var(--line-height);
-  padding: 0.3rem 0;
+  font-size: 20px;
+  padding: 2rem 0;
 }
 
-.skills h1 {
-  margin-left: 8rem;
+.skills-section h1 {
+  text-align: center;
 }
+
+/* footer {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.footer-title {
+  text-align: center;
+  color: ghostwhite;
+  width: 50%;
+  font-size: 0.9em;
+} */

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -31,6 +31,11 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 
     <title>Adam Ajane</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/images/favicon-letter-a.png"
+    />
 
     <!-- Favicons -->
     <link
@@ -46,28 +51,52 @@
     />
   </head>
   <body>
-    <!-- Navbar -->
+    <!-- Naviation bar -->
     <nav>
-      <h1>Adam Ajane</h1>
-      <ul class="navigation">
-        <!--<li><a href="#about" class="nav-link">About</a></li> -->
+      <a href="/">
+        <div class="nav-section">
+          <h1>Adam Ajane</h1>
+        </div>
+      </a>
+      <ul class="navigation-bar">
         <li>
           <div class="nav-section">
-            <i class="fa-solid fa-gear"></i>
-            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#about" class="nav-link">
+              <i class="fa-solid fa-user"></i>
+              About
+            </a>
           </div>
         </li>
         <li>
           <div class="nav-section">
-            <i class="fa-solid fa-code"></i>
-            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#skills" class="nav-link">
+              <i class="fa-solid fa-gear"></i>
+              Skills
+            </a>
           </div>
         </li>
-        <!-- <li><a href="#blog" class="nav-link">Blog</a></li> -->
         <li>
           <div class="nav-section">
-            <i class="fa-regular fa-address-card"></i>
-            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#projects" class="nav-link">
+              <i class="fa-solid fa-code"></i>
+              Projects
+            </a>
+          </div>
+        </li>
+        <!-- <li>
+          <div class="nav-section">
+            <a href="#blog" class="nav-link">
+              <i class="fa-solid fa-rss"></i>
+              Blog
+            </a>
+          </div>
+        </li> -->
+        <li>
+          <div class="nav-section">
+            <a href="#contact" class="nav-link">
+              <i class="fa-regular fa-address-card"></i>
+              Contact
+            </a>
           </div>
         </li>
       </ul>
@@ -80,43 +109,63 @@
         <ion-icon class="bars" name="menu-outline"></ion-icon>
       </button>
     </nav>
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-      <img
-        src="assets/images/new-me-circle.png"
-        alt="Adam Ajane"
-        loading="lazy"
-        class="hero-img"
-      />
-      <!--
-        width="300"
-        height="400"
-        -->
-      <div class="bio animate__animated animate__fadeInUp">
-        <h2 class="bio-title">Hi, I'm Adam!</h2>
-        <p class="bio-text">
-          I'm a software engineering student studying at the Technical
-          University of Denmark. This is my personal portfolio website
-          containing an overview of some of my projects that I've done both in
-          school and in my spare time. It's still under development!
-        </p>
-      </div>
-    </section>
-    <!-- Skills section -->
-    <section class="skills" id="skills">
-      <!-- <h1 class="skills-title">Skills</h1>
-      <p class="skills-list"></p> -->
-    </section>
-    <!-- Projects section -->
-    <section class="projects"></section>
-    <!-- Contact section -->
-    <section class="contact"></section>
-    <!-- Social accounts - Fixed to the right -->
-    <ion-icon name="laptop-outline"></ion-icon>
-    <!-- Scroll to top -->
 
-    <!-- Footer section -->
+    <!-- About Section -->
+    <main id="main-page">
+      <section class="about-section" id="about">
+        <div class="about-container animate__animated animate__fadeInUp">
+          <ul>
+            <li>
+              <img
+                src="assets/images/new-me-circle.png"
+                alt="Portrait image of Adam Ajane"
+                loading="lazy"
+                class="about-img"
+              />
+            </li>
+            <li>
+              <h1 class="about-title">Hi, I'm Adam</h1>
+            </li>
+          </ul>
+          <h5>
+            <span
+              class="txt-rotate"
+              data-period="2000"
+              data-rotate='["Human-centered AI student", "Software engineering graduate", "Reader", "Runner", "Jiu-jitsu enthusiast", "Aspiring guitarist"]'
+            ></span>
+          </h5>
+          <p>
+            A software engineering undergraduate, who's currently pursuing an
+            MSE in Human-Centered AI at DTU in Denmark. Curious about the
+            intersection between human and machine. I also like to run, read,
+            practice jiu-jitsu, and play the guitar.
+          </p>
+        </div>
+      </section>
 
+      <!-- Skills section -->
+      <section class="skills-section" id="skills">
+        <!-- <h1 class="skills-title">Skills</h1>
+          <p class="skills-list"></p> -->
+      </section>
+
+      <!-- Projects section -->
+      <section class="projects"></section>
+
+      <!-- Contact section -->
+      <section class="contact"></section>
+
+      <!-- Social accounts - Fixed to the right -->
+      <ion-icon name="laptop-outline"></ion-icon>
+      <!-- Scroll to top -->
+
+      <!-- Footer section -->
+      <footer>
+        <!-- <h1 class="footer-title">
+          Copyright &copy; 2025 Adam Ajane. All Rights Reserved
+        </h1> -->
+      </footer>
+    </main>
     <!-- Website scripts-->
     <script src="assets/js/script.js"></script>
   </body>

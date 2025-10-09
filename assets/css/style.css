@@ -26,10 +26,6 @@ html {
   scroll-behavior: smooth;
 }
 
-#grad {
-  background-image: linear-gradient(to bottom, red, yellow);
-}
-
 nav {
   position: sticky;
   top: 0;
